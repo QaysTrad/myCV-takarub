@@ -1,19 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Profile from './component/profile.jsx'
 
 class App extends React.Component {
-    constructor (props) {
+    constructor(props) {
         super(props);
         this.state = {
         };
     }
 
-    render () {
+    render() {
         return (
-             <div>
-                <h1>hello world</h1>
+            <div>
+                <Profile />
             </div>
-         );
+        );
     }
 }
 
