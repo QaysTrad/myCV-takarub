@@ -30,11 +30,11 @@ const styles = theme => ({
         position: 'relative',
         display: 'flex',
         width: '100%',
-        
+
     },
     appBar: {
-            position: 'absolute',
-            transition: theme.transitions.create(['margin', 'width'], {
+        position: 'absolute',
+        transition: theme.transitions.create(['margin', 'width'], {
             easing: theme.transitions.easing.sharp,
             duration: theme.transitions.duration.leavingScreen,
         }),
@@ -48,18 +48,11 @@ const styles = theme => ({
             duration: theme.transitions.duration.enteringScreen,
         }),
     },
-    appBarShift: {
-        width: `calc(100% - ${drawerWidth}px)`,
-        transition: theme.transitions.create(['margin', 'width'], {
-            easing: theme.transitions.easing.easeOut,
-            duration: theme.transitions.duration.enteringScreen,
-        }),
-    },
     menuButton: {
         marginLeft: 12,
         marginRight: 20,
         fontSize: 36,
-        
+
     },
     hide: {
         display: 'none',
@@ -73,7 +66,7 @@ const styles = theme => ({
         alignItems: 'center',
         justifyContent: 'flex-end',
         padding: '0 8px',
-        
+
     },
     content: {
         flexGrow: 1,
@@ -103,7 +96,6 @@ const styles = theme => ({
         marginLeft: 'auto',
         marginRight: 'auto',
         margin: '20px'
-
     }
 });
 
@@ -167,8 +159,8 @@ class Profile extends React.Component {
                                 <MenuIcon />
                             </IconButton>
                             <Hidden >
-                            <Typography variant="title" noWrap className={classNames(classes.header)}>
-                                Qays Trad
+                                <Typography variant="title" noWrap className={classNames(classes.header)}>
+                                    Qays Trad
                             </Typography>
                             </Hidden>
                         </Toolbar>
@@ -176,7 +168,7 @@ class Profile extends React.Component {
                         <br></br>
                     </AppBar>
                     {drawer}
-                    <Conatnt className={classNames({[classes.appBarShift]: open})} />
+                    <Conatnt />
                 </div>
                 <div className={classNames(classes.footer)}>
                     <p>Footer</p>

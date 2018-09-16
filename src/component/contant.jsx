@@ -6,15 +6,14 @@ import Typography from '@material-ui/core/Typography';
 
 const styles = theme => ({
     root: {
-        position: 'relative',
         flexGrow: 1,
         margin: '350px 10%',
-        marginBottom: '20px'
+        marginBottom: '20px',
+        width:'auto',
     },
     rightDiv: {
         padding: theme.spacing.unit * 2,
         color: theme.palette.text.secondary,
-        marginLeft: "80px"
     },
     leftDiv: {
         color: theme.palette.text.secondary,
@@ -34,7 +33,7 @@ class Conatnt extends React.Component {
         return (
             <div className={classes.root}>
                 <Grid container spacing={24}>
-                    <Grid item xs={12} md={6}>
+                    <Grid item sm={12} md={12} lg={6}>
                         <div className={classes.rightDiv}>
                             <h1>CONTACT</h1>
                             <Typography variant="subheading" gutterBottom>
@@ -42,7 +41,6 @@ class Conatnt extends React.Component {
                             </Typography>
                             <Typography variant="subheading" gutterBottom>
                                 962-787061743
-
                              </Typography>
                             <h1>INTERSTS</h1>
                             <Typography variant="subheading" gutterBottom>
@@ -101,7 +99,7 @@ class Conatnt extends React.Component {
                             (Windows Phone, Azure Servers)
                         </div>
                     </Grid>
-                    <Grid item xs={12} md={6}>
+                    <Grid item sm={12} md={12} lg={6}>
                         <div className={classes.leftDiv}>
                             <h1> PROJECTS</h1>
                             <Typography variant="subheading" gutterBottom>
