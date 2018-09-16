@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "react": "webpack -d --watch"
+    "react": "webpack -d --watch",
+    "heroku-postbuild": "webpack -d "
   },
   "repository": {
     "type": "git",
