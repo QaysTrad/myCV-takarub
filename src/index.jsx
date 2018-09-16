@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Profile from './component/profile.jsx'
+import Profile from './component/profile.jsx';
 
 class App extends React.Component {
     constructor(props) {

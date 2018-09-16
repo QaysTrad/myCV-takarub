@@ -8,7 +8,8 @@ const styles = theme => ({
     root: {
         position: 'relative',
         flexGrow: 1,
-        marginTop: "300px",
+        margin: '350px 10%',
+        marginBottom: '20px'
     },
     rightDiv: {
         padding: theme.spacing.unit * 2,
@@ -33,7 +34,7 @@ class Conatnt extends React.Component {
         return (
             <div className={classes.root}>
                 <Grid container spacing={24}>
-                    <Grid item xs={5}>
+                    <Grid item xs={12} md={6}>
                         <div className={classes.rightDiv}>
                             <h1>CONTACT</h1>
                             <Typography variant="subheading" gutterBottom>
@@ -100,7 +101,7 @@ class Conatnt extends React.Component {
                             (Windows Phone, Azure Servers)
                         </div>
                     </Grid>
-                    <Grid item xs={5}>
+                    <Grid item xs={12} md={6}>
                         <div className={classes.leftDiv}>
                             <h1> PROJECTS</h1>
                             <Typography variant="subheading" gutterBottom>
