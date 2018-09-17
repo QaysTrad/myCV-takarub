@@ -14,7 +14,6 @@ import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import { mailFolderListItems, otherMailFolderListItems } from './tileData';
 import Conatnt from './contant.jsx';
-import Hidden from '@material-ui/core/Hidden';
 
 const drawerWidth = 240;
 
@@ -158,11 +157,10 @@ class Profile extends React.Component {
                             >
                                 <MenuIcon />
                             </IconButton>
-                            <Hidden >
-                                <Typography variant="title" noWrap className={classNames(classes.header)}>
-                                    Qays Trad
+                            <Typography variant="title" noWrap className={classNames(classes.header)}>
+                                Qays Trad
+                                   
                             </Typography>
-                            </Hidden>
                         </Toolbar>
                         <br></br>
                         <br></br>
@@ -171,7 +169,7 @@ class Profile extends React.Component {
                     <Conatnt />
                 </div>
                 <div className={classNames(classes.footer)}>
-                    <p>Footer</p>
+                    <p>Copyright for QaysTrad</p>
                 </div>
             </div>
         );
